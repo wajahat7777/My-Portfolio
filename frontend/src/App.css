@@ -50,6 +50,24 @@
   background: none;
 }
 
+.centered-sections > section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .centered-sections > section {
+    min-height: 100vh;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: flex-start;
+  }
+}
+
 /* Optional: Remove horizontal scroll on small screens */
 @media (max-width: 600px) {
   .centered-sections {

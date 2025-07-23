@@ -22,7 +22,8 @@ const Hero = () => {
     <section className={styles.hero} id="home">
       <div className={styles.heroAccent}></div>
       <div className={styles.left}>
-        <h1 className={styles.title}>I'm Wajahat Ullah Khan <span className={styles.role}>(Software Developer)</span></h1>
+        <h1 className={styles.title}>I'm Wajahat Ullah Khan</h1>
+        <div className={styles.role}>(Software Developer)</div>
         <div className={styles.tagline}>Turning ideas into code. Building modern web & mobile experiences.</div>
         <div className={styles.animatedText}>{animatedTexts[animatedIdx]}</div>
         <p className={styles.desc}>Creating Modern and Responsive Web Applications<br/>Transforming Ideas Into Interactive Masterpieces</p>
