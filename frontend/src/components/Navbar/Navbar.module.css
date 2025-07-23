@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #18191a;
+  border-bottom: 1.5px solid #232526;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.iconBox {
+  background: #232526;
+  border-radius: 12px;
+  padding: 0.7rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.iconBox:hover {
+  background: #f5c242;
+  box-shadow: 0 4px 16px rgba(245,194,66,0.18);
+}
+
+.iconBox a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBox:hover a {
+  color: #18191a;
+}
+
+.icon {
+  font-size: 1.5rem;
+} 

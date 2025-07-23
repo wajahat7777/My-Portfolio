@@ -1,0 +1,96 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 3rem 2rem 3rem;
+  background: #18191a;
+  min-height: 70vh;
+}
+
+.left {
+  flex: 1;
+  border-left: 4px solid #f5c242;
+  padding-left: 2.5rem;
+}
+
+.hello {
+  font-size: 2.2rem;
+  color: #f5c242;
+  font-family: 'Montserrat', serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.role {
+  color: #f5c242;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #bdbdbd;
+  margin-bottom: 2rem;
+}
+
+.cvBtn {
+  display: inline-block;
+  background: #232526;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 0 #333;
+  border: none;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.cvBtn:hover {
+  background: #f5c242;
+  color: #18191a;
+  box-shadow: 1px 1px 0 #333;
+}
+
+.socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socials a:hover {
+  color: #f5c242;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImg {
+  width: 270px;
+  height: 270px;
+  background: #232526;
+  border-radius: 50%;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  background-image: url('/myimage.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #f5c242;
+} 

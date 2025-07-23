@@ -1,0 +1,45 @@
+.about {
+  background: #18191a;
+  padding: 4rem 3rem 2rem 3rem;
+}
+
+.heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #f5c242;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 120px;
+  height: 6px;
+  background: #232526;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.text {
+  flex: 2;
+  font-size: 1.08rem;
+  color: #eaeaea;
+  line-height: 1.7;
+  border-left: 4px solid #f5c242;
+  padding-left: 2rem;
+}
+
+.image {
+  flex: 1;
+  min-width: 260px;
+  min-height: 260px;
+  background: #232526 url('/sidepicture.jpg') center/cover no-repeat;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  filter: grayscale(0.7);
+} 

@@ -1,0 +1,82 @@
+.projects {
+  background: #18191a;
+  padding: 4rem 3rem 2rem 3rem;
+}
+
+.heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #f5c242;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #232526;
+  border-radius: 14px;
+  border: 1.5px solid #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.2rem 2rem 1.2rem;
+  min-width: 260px;
+  max-width: 350px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(245,194,66,0.18);
+  border: 1.5px solid #f5c242;
+}
+
+.image {
+  width: 100%;
+  height: 140px;
+  background: #333;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.1rem;
+}
+
+.card h3 {
+  font-size: 1.13rem;
+  color: #f5c242;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.01rem;
+  color: #eaeaea;
+  margin-bottom: 1.1rem;
+  text-align: center;
+}
+
+.demoBtn {
+  background: #f5c242;
+  color: #18191a;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.demoBtn:hover {
+  background: #fff;
+  color: #232526;
+} 
