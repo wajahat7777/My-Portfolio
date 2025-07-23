@@ -1,8 +1,14 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0.5rem;
+  }
 }
 
 .logo {
@@ -11,6 +17,17 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+@media (max-width: 600px) {
+  .logo {
+    height: 4em;
+    padding: 0.5em;
+  }
+  a:nth-of-type(2) .logo {
+    animation: none;
+  }
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -59,12 +76,10 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .centered-sections > section {
-    min-height: 100vh;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -74,4 +89,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

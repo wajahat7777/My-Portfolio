@@ -28,6 +28,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button, a {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
