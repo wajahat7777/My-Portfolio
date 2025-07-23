@@ -90,4 +90,39 @@
     border-radius: 12px;
     margin: 1.2rem 0.2rem;
   }
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .infoItem {
+    min-width: 80vw;
+    padding: 0.8rem 0.5rem;
+    font-size: 0.98rem;
+    border-radius: 8px;
+  }
+  .contactIcon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 1rem 0.2rem 0.5rem 0.2rem;
+  }
+  .heading {
+    font-size: 1.1rem;
+  }
+  .infoItem {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.2rem;
+    border-radius: 6px;
+  }
+  .contactIcon {
+    font-size: 1.1rem;
+  }
 } 
