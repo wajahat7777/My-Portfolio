@@ -10,6 +10,7 @@ const animatedTexts = [
 
 const Hero = () => {
   const [animatedIdx, setAnimatedIdx] = useState(0);
+  const [showPhotoModal, setShowPhotoModal] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,6 +18,13 @@ const Hero = () => {
     }, 2200);
     return () => clearInterval(interval);
   }, []);
+
+  // Modal close handler
+  const handleModalClose = (e) => {
+    if (e.target.classList.contains(styles.photoModalOverlay) || e.target.classList.contains(styles.photoModalClose)) {
+      setShowPhotoModal(false);
+    }
+  };
 
   return (
     <section className={styles.hero} id="home">
@@ -38,8 +46,23 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.right}>
-        <div className={styles.profileImg}></div>
+        <div
+          className={styles.profileImg}
+          onClick={() => setShowPhotoModal(true)}
+          style={{ cursor: 'pointer' }}
+          title="Click to enlarge"
+        ></div>
       </div>
+      {showPhotoModal && (
+        <div className={styles.photoModalOverlay} onClick={handleModalClose}>
+          <button className={styles.photoModalClose} onClick={handleModalClose}>&times;</button>
+          <img
+            src="/myimage.jpg"
+            alt="Wajahat Ullah Khan"
+            className={styles.photoModalImg}
+          />
+        </div>
+      )}
     </section>
   );
 };
