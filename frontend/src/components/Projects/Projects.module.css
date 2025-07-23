@@ -309,3 +309,53 @@
   color: #18191a;
   border: 1.5px solid #f5c242;
 } 
+
+@media (max-width: 700px) {
+  .carouselWrapper {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .mainCard {
+    min-width: 95vw;
+    max-width: 98vw;
+    width: 98vw;
+    padding-bottom: 0.7rem;
+  }
+  .mainImage {
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+  }
+  .mainInfo {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+  }
+  .mainTitle {
+    font-size: 1.05rem;
+  }
+  .mainDesc {
+    font-size: 0.95rem;
+  }
+  .projectLinks {
+    gap: 0.5rem;
+  }
+  .carouselBtn {
+    font-size: 1.5rem;
+    width: 36px;
+    height: 36px;
+    padding: 0.1em 0.2em;
+  }
+  .casualProjectsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .casualCard {
+    padding: 0.7rem 0.5rem 1rem 0.5rem;
+    font-size: 0.95rem;
+  }
+  .casualCard h4 {
+    font-size: 1rem;
+  }
+  .casualLinkBtn {
+    font-size: 0.92rem;
+    padding: 0.3rem 0.7rem;
+  }
+} 
