@@ -19,33 +19,76 @@
   justify-content: center;
 }
 
+.serviceIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card {
   background: #232526;
   color: #fff;
-  border-radius: 14px;
+  border-radius: 18px;
   border: 1.5px solid #333;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 2rem 2rem 2rem;
   min-width: 220px;
   max-width: 320px;
   margin-bottom: 1.5rem;
-  transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, border 0.2s, background 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .card h3 {
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   color: #f5c242;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   font-weight: 700;
 }
 
 .card p {
   font-size: 1.01rem;
   color: #eaeaea;
+  margin-bottom: 0.5rem;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(245,194,66,0.18);
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 8px 32px rgba(245,194,66,0.18);
   border: 1.5px solid #f5c242;
+  background: #18191a;
+}
+
+.sectionCard {
+  background: #232526;
+  border-radius: 24px;
+  border: 2.5px solid #444;
+  box-shadow: 0 8px 32px rgba(80,80,80,0.18);
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 1100px;
+  width: 100%;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+@media (max-width: 900px) {
+  .sectionCard {
+    padding: 2rem 1rem;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionCard {
+    padding: 1.2rem 0.3rem;
+    border-radius: 12px;
+    margin: 1.2rem 0.2rem;
+  }
 } 

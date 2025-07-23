@@ -3,7 +3,7 @@ import styles from './About.module.css';
 
 const About = () => {
   return (
-    <section className={styles.about} id="about">
+    <section className={`${styles.about} ${styles.sectionCard}`} id="about" data-aos="fade-up" data-aos-duration="900">
       <h2 className={styles.heading}>ABOUT ME</h2>
       <div className={styles.underline}></div>
       <div className={styles.contentWrapper}>
