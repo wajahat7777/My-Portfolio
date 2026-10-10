@@ -5,6 +5,30 @@ import { SiFigma } from 'react-icons/si';
 
 const mainProjects = [
   {
+    title: 'PropTalk',
+    desc: 'PropTalk is an AI voice agent that helps real estate agencies answer inbound and outbound calls around the clock, qualifying leads and booking appointments so after hours inquiries are no longer lost.',
+    image: '/PropTalk.jpeg',
+    links: [
+      { url: 'https://prop-talk-frontend.vercel.app/', icon: <FaExternalLinkAlt />, label: 'Live' },
+    ],
+  },
+  {
+    title: 'PatchPilot',
+    desc: 'I built PatchPilot because debugging is often harder than writing new code especially when an error appears . It is an AI agent that reads the project, traces dependencies, finds the root cause, applies a focused fix.',
+    image: '/PatchPilot.png',
+    links: [
+      { url: 'https://patch-pilot-blush.vercel.app/', icon: <FaExternalLinkAlt />, label: 'Live' },
+    ],
+  },
+  {
+    title: 'ModernBodyMeasure',
+    desc: 'ModernBodyMeasure is a coaching platform for both training and nutrition, gathering client profiles, cloneable programs, an exercise library, daily workouts, performance logs, meal plans, macros, and habit streaks into one calm, connected space.',
+    image: '/ModernBodyMeasure.jpeg',
+    links: [
+      { url: 'https://mbm-tracker.vercel.app/', icon: <FaExternalLinkAlt />, label: 'Live' }
+    ],
+  },
+  {
     title: 'Lost and Found System',
     desc: 'MERN Stack: A platform to help users report, search, and recover lost items efficiently. Built with React, it features a user-friendly interface, search filters, and item tracking.',
     image: '/LostAndFound.png',
@@ -69,17 +93,20 @@ const Projects = () => {
           <div className={styles.mainInfo}>
             <h3 className={styles.mainTitle}>{main.title}</h3>
             <p className={styles.mainDesc}>{main.desc}</p>
-            <div className={styles.projectLinks}>
-              {main.links.map((link, lidx) => (
-                <a href={link.url} key={lidx} target="_blank" rel="noopener noreferrer" className={styles.projectLinkBtn} title={link.label}>
-                  {link.icon} {link.label}
-                </a>
-              ))}
-            </div>
+            {main.links.length > 0 && (
+              <div className={styles.projectLinks}>
+                {main.links.map((link, lidx) => (
+                  <a href={link.url} key={lidx} target="_blank" rel="noopener noreferrer" className={styles.projectLinkBtn} title={link.label}>
+                    {link.icon} {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <button className={styles.carouselBtn} onClick={nextMain} aria-label="Next Project"><FaChevronRight /></button>
       </div>
+      <p className={styles.carouselMeta}>{mainIdx + 1} / {mainProjects.length}</p>
       <div className={styles.casualProjectsGrid}>
         {casualProjects.map((project, idx) => (
           <div className={styles.casualCard} key={idx}>
@@ -93,4 +120,4 @@ const Projects = () => {
   );
 };
 
-export default Projects; 
+export default Projects;

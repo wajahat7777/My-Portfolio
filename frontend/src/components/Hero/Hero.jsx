@@ -3,9 +3,10 @@ import styles from './Hero.module.css';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const animatedTexts = [
-  'Turning ideas into code...',
-  'Building modern web & mobile experiences.',
-  'Let\'s create something amazing together!'
+  'Turning complex problems into simple, scalable products.',
+  'Developing AI agents and automating workflows...',
+  'Bringing ideas to life with code and AI.',
+  'Creating the future, one innovation at a time.'
 ];
 
 const Hero = () => {
@@ -31,11 +32,23 @@ const Hero = () => {
       <div className={styles.heroAccent}></div>
       <div className={styles.left}>
         <h1 className={styles.title}>I'm Wajahat Ullah Khan</h1>
-        <div className={styles.role}>(Software Developer)</div>
-        <div className={styles.tagline}>Turning ideas into code. Building modern web & mobile experiences.</div>
-        <div className={styles.animatedText}>{animatedTexts[animatedIdx]}</div>
-        <p className={styles.desc}>Creating Modern and Responsive Web Applications<br/>Transforming Ideas Into Interactive Masterpieces</p>
-        <div className={styles.ctaBtns}>
+        <div className={styles.role}>(AI Engineer & Developer)</div>
+        <div className={styles.tagline}>
+</div>
+
+<div className={styles.animatedText}>
+  {animatedTexts[animatedIdx]}
+</div>
+
+<p className={styles.desc}>
+  Engineering Intelligent Experiences with AI.
+  <br />
+  <span>
+    Building AI Agents, Smart Automation & Scalable Applications.
+  </span>
+</p>
+
+<div className={styles.ctaBtns}>
           <a href="/Wajahat-Ullah-Khan-Resume.pdf" download className={styles.cvBtn}>Download CV</a>
           <a href="#contact" className={styles.contactBtn}>Contact Me</a>
         </div>

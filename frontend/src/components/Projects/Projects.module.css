@@ -155,7 +155,7 @@
   border: 2px solid #444;
   box-shadow: 0 8px 32px rgba(80,80,80,0.18);
   min-width: 370px;
-  max-width: 400px;
+  max-width: 620px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -212,10 +212,22 @@
 }
 
 .mainDesc {
-  font-size: 1.05rem;
-  color: #eaeaea;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.18rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #f3efe4;
   margin-bottom: 1.1rem;
   text-align: center;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.carouselMeta {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: -1.6rem 0 2rem 0;
 }
 
 .projectLinks {
@@ -337,7 +349,7 @@
     font-size: 1.05rem;
   }
   .mainDesc {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
   }
   .projectLinks {
     gap: 0.5rem;
@@ -382,6 +394,6 @@
     font-size: 0.95rem;
   }
   .mainDesc {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 } 
